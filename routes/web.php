@@ -16,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('hello','App\Http\Controllers\helloController@index');
-Route::get('fruit','App\Http\Controllers\fruitController@index');
-Route::get('/laravelapp/public/hellox','App\Http\Controllers\helloController@index2');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+Route::get('hello','App\Http\Controllers\helloController@index')->middleware('auth');;
+Route::get('fruit','App\Http\Controllers\fruitController@index')->middleware('auth');;
