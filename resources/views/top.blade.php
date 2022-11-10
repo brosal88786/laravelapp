@@ -63,7 +63,7 @@
 <body class="h1">
 @csrf
 <div style="position:relative;width:400px;height:600px;">
-    <button class="hamberger" style="z-index:100;border-color:tan;background:transparent;cursor:pointer;right:16px;width:40px;height:032px;position:absolute;">
+    <button class="hamberger" style="z-index:100;border-color:tan;border-color:transparent;background:transparent;cursor:pointer;right:16px;width:40px;height:032px;position:absolute;">
         <span class="hamberger_bar"></span>
         <span class="hamberger_bar"></span>
         <span class="hamberger_bar"></span>
